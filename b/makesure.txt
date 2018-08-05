@@ -1,1 +1,1 @@
-make sure /b/ is 777
+make sure /b/ is 777 (or writable for php daemon)

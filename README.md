@@ -17,3 +17,9 @@ Sometimes I want to feel the pure, naked request itself...
 
 **Back to the basics...** 
 
+
+
+## Permission setting
+
+- /b/ should be writable for php daemon (777 is fine)
+- /proto/ shoud be un-writable for php daemon (or it could be compromised)
