@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HaeBin</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/x-icon" href="/HaeBin/img/skull.png">
+	<link rel="icon" type="image/x-icon" href="/HaeBin/img/skull.png">
+</head>
+
+<body style="background-image: url('/HaeBin/img/bg-hallo.jpg');background-size: cover;background-repeat: no-repeat; background-color: #151719;">
+    <div class="container mt-5">
+        <div class="jumbotron py-4" style="background-color: rgba(255,135,0,0.3);background-image: url('/HaeBin/img/pumpkin-512.png'); background-size:70px;">
+            <span class="text-light">
+                <h1>
+                HaeBin
+                <span class="small">
+                    by imnotkind
+                </span>
+                </h1>
+            </span>
+            <br>
+
+            <form method="POST" action="javascript:clearbin()" class="form-inline">
+                <button style="position:absolute;top:0;right:0;" type="submit" class="btn btn-danger">Clear All Bin</button>
+            </form>
+
+            <span class="text-secondary">
+                <h2>Three Tiny Steps</h2>
+                <ol>
+                    <li>Create a new Bin</li>
+                    <li>Send any http request to your bin</li>
+                    <li>Check your requests in the bin!</li>
+                </ol>
+            </span>
+
+            <span class="text-info">
+                <h2>Motive</h2>
+                <p>Fiddler, Postman, Postbin, Requestbin... <br>
+                    Those scams show some pretty information, but a real request doesn't look like that... <br>
+                    Sometimes I want to feel the pure, naked request itself...<br>
+                    <strong>Back to the basics...</strong>
+                </p>
+            </span>
+            <br>
+
+            <form method="POST" action="./makebin.php" class="form-inline">
+                <button type="submit" class="btn btn-primary btn-lg">Create Bin</button>
+            </form>
+
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+        function clearbin(){
+            fetch("./clear.php")
+            .then(resp => alert("cleared!"));
+        }
+    </script>
+</body>
+
+</html>
