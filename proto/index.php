@@ -2,7 +2,6 @@
 Header("Cache-Control: no-cache, no-store, must-revalidate");
 Header("Pragma: no-cache");
 Header("Expires: 0");
-Header("Content-Security-Policy: default-src 'self'; font-src use.fontawesome.com; script-src 'unsafe-inline' 'self' code.jquery.com cdnjs.cloudflare.com maxcdn.bootstrapcdn.com ;style-src maxcdn.bootstrapcdn.com use.fontawesome.com 'self' 'unsafe-inline'; connect-src 'self' imnotkind.ml:5350");
 ?>
 
 <!DOCTYPE html>
