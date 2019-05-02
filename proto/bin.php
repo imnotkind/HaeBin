@@ -17,7 +17,7 @@ $log = json_decode(file_get_contents("./log.json"));
 
 $req = get_raw_http_request();
 
-array_push($log,$req);
+array_unshift($log,$req);
 
 file_put_contents("./log.json",json_encode($log));
 
