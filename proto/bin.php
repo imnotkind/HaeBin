@@ -1,5 +1,7 @@
 <?php
 
+Header("Access-Control-Allow-Origin: *");
+
 function get_raw_http_request() {
 
   $request = "{$_SERVER['REQUEST_METHOD']} {$_SERVER['REQUEST_URI']} {$_SERVER['SERVER_PROTOCOL']}\r\n";
