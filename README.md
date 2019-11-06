@@ -1,5 +1,5 @@
 # HaeBin by imnotkind
-a pure raw request bin, requires php
+a pure raw request bin, requires php and a web server
 
 ## Three Tiny Steps
 
