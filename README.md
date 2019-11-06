@@ -1,5 +1,6 @@
 # HaeBin by imnotkind
-a pure raw request bin, requires php and a web server
+a pure raw request bin, requires php and a web server  
+docker version of this repo can be found [here](https://github.com/imnotkind/HaeBin)
 
 ## Three Tiny Steps
 
