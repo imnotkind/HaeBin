@@ -1,5 +1,5 @@
 # HaeBin by imnotkind
-a pure raw request bin
+a pure raw request bin, requires php
 
 ## Three Tiny Steps
 
@@ -19,7 +19,7 @@ Sometimes I want to feel the pure, naked request itself...
 
 
 
-## Permission setting
+## Permission setting (Installation)
 **execute `./install.sh`**  
 - /b/ should be writable for php daemon (777 is fine)
 - /proto/ shoud be un-writable for php daemon (or it could be compromised)
